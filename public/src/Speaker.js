@@ -63,7 +63,6 @@ const Session = ({
         <div className='card card-height p-4 mt-4'>
           <SpeakerImage id={id} first={first} last={last} />
           <SpeakerDemographics {...speaker} />
-          <Increment />
         </div>
       </div>
     )
