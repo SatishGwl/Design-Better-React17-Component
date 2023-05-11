@@ -1,6 +1,7 @@
 import Speakers from "../src/components/Speakers";
 const IndexPage = () => {
-  return <Speakers />;
+  return(
+    <Speakers />)
 };
 
 export default IndexPage;
