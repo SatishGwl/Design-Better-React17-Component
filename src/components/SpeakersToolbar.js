@@ -1,10 +1,10 @@
-import { useState } from "react";
 
 function SpeakersToolbar({
   theme, 
-  setTheme
+  setTheme,
+  showSessions,
+  setShowSessions
 }) {
-const [showSessions, setShowSessions] = useState(true);
 
   return (
     <section className="toolbar dark-theme-header">
