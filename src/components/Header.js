@@ -1,4 +1,9 @@
-const Header= ({them})=> {
+import {ThemeContext} from './Contexts/ThemeContext'
+import { useContext } from 'react';
+
+function Header() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div className="padT4 padB4">
       <div className="container mobile-container">
@@ -9,10 +14,8 @@ const Header= ({them})=> {
           <div className="light">
             <h4 className="header-title">Silicon Valley Code Camp</h4>
           </div>
-          <div className={
-            them === "light" ? "" : "text-info"
-          }>
-            Hello Mr. Satish &nbsp;&nbsp;
+          <div className={theme === "light" ? "" : "text-info"}>
+            Hello Mr. Smith &nbsp;&nbsp;
             <span>
               <a href="#">sign-out</a>
             </span>
