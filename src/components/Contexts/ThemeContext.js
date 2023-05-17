@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import useTheme from "../hooks/useTheme";
+// import useTheme from "../hooks/useTheme";
 export const ThemeContext = createContext()
 
 const ThemeProvider = ({ children, startingTheme }) => {
